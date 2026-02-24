@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><title>finance-sync – Authorization</title>
+<style>
+body{font-family:sans-serif;max-width:700px;margin:40px auto;padding:0 20px;color:#333;}
+code{background:#f4f4f4;padding:8px 12px;display:block;word-break:break-all;border-radius:4px;font-size:14px;}
+button{margin-top:10px;padding:8px 16px;cursor:pointer;}
+</style>
+</head>
+<body>
+<h2>Authorization successful ✅</h2>
+<p>Copy the full URL below and paste it back into your terminal:</p>
+<code id="url"></code>
+<button onclick="navigator.clipboard.writeText(window.location.href)">Copy to clipboard</button>
+<script>document.getElementById('url').textContent = window.location.href;</script>
+</body>
+</html>
